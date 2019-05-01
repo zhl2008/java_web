@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3afbb84b-8a69-4a76-a673-d12229879916" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../struts2-15/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../struts2-15/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../struts2-15/.idea/struts2-15.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../struts2-15/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java.md" beforeDir="false" afterPath="$PROJECT_DIR$/../java.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts2-8/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../struts2-8/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts2-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../struts2-8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../struts2.md" beforeDir="false" afterPath="$PROJECT_DIR$/../struts2.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,7 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -111,6 +111,7 @@
         <option value="$PROJECT_DIR$/.idea/libraries/struts2_core_2_2_3.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/asm_3_1.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/xwork_core_2_2_3.xml" />
+        <option value="$PROJECT_DIR$/../struts2-8/.idea/struts2-8.iml" />
       </list>
     </option>
   </component>
@@ -215,6 +216,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -320,15 +322,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556079763867</updated>
-      <workItem from="1556079765383" duration="2322000" />
+      <workItem from="1556079765383" duration="2424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2322000" />
+    <option name="totallyTimeSpent" value="2424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />

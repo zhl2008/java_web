@@ -536,3 +536,23 @@ a kind of middleware
    
 
 
+### j2ee
+java 2 enterprise edition
+
+standard set of service 
+business application
+large-scale environment
+
+the common protocols using in the j2ee:
+http,rmi,jdbc,jndi,jms
+
+
+### property oriented programming (java)
+
+limitation:
+1. call only use the classes available to the application;
+2. gadget classes must implement serializable/externalizable interface;
+3. library/class  version;
+4. static type constraints;
+
+
