@@ -69,3 +69,9 @@ Content-Length: 587
 CVE-2018-2628: Weblogic WLS Core Components deserialization exploit
 
 ysoserial
+
+
+CVE-2019-2725 exploit analysis:
+http://xxlegend.com/2019/04/30/CVE-2019-2725%E5%88%86%E6%9E%90/
+
+

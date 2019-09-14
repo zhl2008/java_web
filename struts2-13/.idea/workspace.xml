@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../java.md" beforeDir="false" afterPath="$PROJECT_DIR$/../java.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../struts2-8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../struts2-8/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weblogic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../weblogic.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="jar://$PROJECT_DIR$/WEB-INF/lib/struts2-core-2.2.3.jar!/org/apache/struts2/views/util/UrlHelper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
+            <state relative-caret-position="726">
               <caret line="187" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
@@ -113,6 +114,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +202,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,17 +313,17 @@
       <updated>1556079763867</updated>
       <workItem from="1556079765383" duration="2424000" />
       <workItem from="1556777091759" duration="597000" />
+      <workItem from="1556869152040" duration="572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3021000" />
+    <option name="totallyTimeSpent" value="3593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -412,7 +413,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/WEB-INF/lib/struts2-core-2.2.3.jar!/org/apache/struts2/views/util/UrlHelper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
+        <state relative-caret-position="726">
           <caret line="187" selection-start-line="187" selection-end-line="187" />
         </state>
       </provider>

